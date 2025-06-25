@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>full popup</title>
+</head>
+<style>
+  * { 
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    appearance: none;
+    background: none;
+    border: none;
+  }
+
+  html,body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  /* .full-popup {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    max-width: 720px;
+  } */
+
+  .full-popup {
+    /* position: fixed;
+    inset: 0; */
+    height: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .full-popup-inner {
+     position: relative;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+/* 상단 영역 */
+.popup-header {
+  position: relative;
+  padding: 16px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.popup-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.popup-button-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+/* 본문 (스크롤) */
+.popup-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* 하단 고정 버튼 */
+.popup-footer {
+  flex-shrink: 0;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.popup-submit {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+.tip {
+  background: red;
+  height: 100px; 
+}
+</style>
+<body>
+<div class="full-popup">
+  <div class="full-popup-inner">
+    <div class="popup-header">
+      <h2 class="popup-title">제목</h2>
+    </div>
+    <div class="popup-body">
+      <p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p><p>내용이 들어갑니다...</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <p>스크롤 가능한 본문</p>
+      <div class="tip">
+        유의 사항 dfdfddfdfdfdfdf
+      </div>
+    <!-- ... -->
+    </div>
+    <div class="popup-footer">
+      <!-- <div class="tip">
+        유의 사항 dfdfddfdfdfdfdf
+      </div> -->
+      <button type="button" class="popup-submit">확인</button>
+    </div>
+    <div class="popup-button-close">
+      <button type="button" class="popup-close">닫기</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
